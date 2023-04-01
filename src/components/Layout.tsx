@@ -7,13 +7,11 @@ interface LayoutProps {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="bg-indigo-500">
-      <div className="container mx-auto px-5 border-2 lg:max-w-7xl">
+    <div className="bg-white h-full">
+      <div className="container mx-auto px-5 lg:max-w-7xl">
         <div className="grid grid-cols-4">
           <Sidebar />
-          <div className="col-span-3 lg:col-span-2 border-x-[1]">
-            {children}
-          </div>
+          <div className="col-span-3 lg:col-span-2 border-x-2">{children}</div>
         </div>
       </div>
     </div>
